@@ -1,3 +1,11 @@
+Modified version of Easy-Deflate https://github.com/Jacob-Christian-Munch-Andersen/Easy-Deflate
+
+* Added semi-colons to easydeflate.js so it can be minified
+* Namespaced functions inside global EasyDeflate object
+* Base64 lib replaced with one with detailed license info
+
+Modifications by Ed Sanders, Public Domain.
+
 Easy-Deflate
 ============
 
@@ -21,7 +29,7 @@ The following shims are included:<br>
 es5-shim by Kristopher Michael Kowal https://github.com/kriskowal/es5-shim<br>
 JSON 3 by Kit Cambridge http://bestiejs.github.com/json3/<br>
 Typed arrays light shim by Jacob Christian Munch-Andersen https://github.com/Jacob-Christian-Munch-Andersen/Typed-arrays-light-shim<br>
-base64 by Yaffle https://gist.github.com/1284012
+<s>base64 by Yaffle https://gist.github.com/1284012</s>
 
 License:
 ========
