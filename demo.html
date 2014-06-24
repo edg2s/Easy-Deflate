@@ -8,7 +8,8 @@
 	See reults in developer console.
 	<!--Mandatory files-->
 	<script src="easydeflate.js"></script><!--easydeflate.js must be included before deflateinflate.min.js-->
-	<script src="deflateinflate.min.js"></script>
+	<script src="deflate.js"></script>
+	<script src="inflate.js"></script>
 	<!--Shims for browser compatibility-->
 	<script src="typedarrays.js"></script>
 	<script src="json3.min.js"></script>
@@ -24,12 +25,12 @@
 		}
 		
 		start=+new Date()
-		z=deflate(txt)
+		z=EasyDeflate.deflate(txt)
 		mid=+new Date()
 		console.log("Original string lengt: "+txt.length)
 		console.log("Compressed string lengt: "+z.length)
 		//console.log(z)
-		o=inflate(z)
+		o=EasyDeflate.inflate(z)
 		console.log("Decompressed string lengt: "+o.length)
 		console.log("Original string equal to decompressed: "+(o===txt))
 		console.log("Compression time: "+(mid-start)+" ms")

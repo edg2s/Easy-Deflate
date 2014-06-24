@@ -26,7 +26,9 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 **/
 // For information and latest version see: https://github.com/Jacob-Christian-Munch-Andersen/Easy-Deflate
-zip={};
+(function(){
+
+var zip={};
 function UTF8encode(str){
 	var out=[];
 	var a;
@@ -207,3 +209,11 @@ function inflate(dfl){
 		return null;
 	}
 }
+
+window.EasyDeflate = {
+	'zip': zip,
+	'inflate': inflate,
+	'deflate': deflate
+};
+
+})();
