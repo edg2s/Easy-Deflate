@@ -1,5 +1,7 @@
 Modified version of Easy-Deflate https://github.com/Jacob-Christian-Munch-Andersen/Easy-Deflate
 
+This version: https://github.com/edg2s/Easy-Deflate
+
 * Added semi-colons to easydeflate.js so it can be minified
 * Namespaced functions inside global EasyDeflate object
 * Base64 lib replaced with one with detailed license info
